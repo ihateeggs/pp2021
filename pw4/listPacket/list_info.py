@@ -8,5 +8,5 @@ def list_std(stdinfo):
 def list_Course(coursesinfo):
     print("List of courses info: ")
     for n in range (0, len(coursesinfo[0])):
-        print(f"{n+1}. - \t {coursesinfo[0][n]} \t {coursesinfo[1][n]}")
+        print(f"{n+1}. - \t {coursesinfo[0][n]} \t {coursesinfo[1][n]} \t {coursesinfo[2][n]}")
     print("--------------\n")

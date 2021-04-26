@@ -7,10 +7,13 @@ def input_Course_numb():
 def input_Course_info(count):
     namec=[]
     idc=[]
+    credit = []
     for n in range(1, count+1):
         print(f"Info of course # {n} ")
         name = input(" -Name: ")
         namec += [name]
         id = input(" -ID: ")
         idc += [id]
-    return [namec, idc]
+        cre = input(" -Credits: ")
+        credit += [cre]
+    return [namec, idc, credit]

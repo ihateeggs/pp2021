@@ -1,3 +1,5 @@
+import numpy as np
+
 from inputPacket import input_students_info
 std_num = input_students_info.input_Student_numb()
 std_info = input_students_info.input_Student_info(std_num)
