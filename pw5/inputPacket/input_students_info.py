@@ -2,21 +2,21 @@
 
 def input_Student_numb():
     i= int(input("Enter number of students: "))
-    f.write(i + "\n")
     return i
 
 def input_Student_info(count):
     ids=[]
     names=[]
     dobs=[]
-    with open("student.txt", "w+") as f:
+    with open("student.txt", "w") as f:
+        f.write("-----Student Info-----\n")
         for i in range(1, count+1):
             print(f"Info of student # {i} ")
             name = input(" -Name: ")
-            f.write(name + "\n")
+            f.write( name + " \t \t \t")
             names += [name]
             id = input(" -ID: ")
-            f.write(id + "\n")
+            f.write(id + "\t \t \t")
             ids += [id]
             from datetime import datetime
             dob = input(" -DOB(DD/MM/YYYY): ")
@@ -24,6 +24,6 @@ def input_Student_info(count):
             print(f'Day: {dob.day}')
             print(f'Month: {dob.month}')
             print(f'Year: {dob.year}')
-            f.write(dob + "\n")
             dobs += [dob]
-        return [names, ids, dobs]
+            f.write(str(dob) + "\n")
+    return [names, ids, dobs]

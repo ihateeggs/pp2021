@@ -15,5 +15,3 @@ listc = list_info.list_Course(course_info)
 from markPacket import input_Mark
 mark = input_Mark.input_Marks(course_info,std_info)
 
-f = open("student.txt","r+")
-f.write(std_num)

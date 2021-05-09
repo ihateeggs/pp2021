@@ -1,0 +1,4 @@
+-----Course List-----
+Course 	 	 ID 	 	 Credits
+Math	 	 	1	 	 	3
+Lit	 	 	2	 	 	4
